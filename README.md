@@ -80,7 +80,7 @@ List the key dependencies here, especially shared libraries, such as:
 // TODO
 
 ### Who to contact? (Team)
-- [@Kenny Cardenas](https://weareloup.slack.com/team/U06FFJ05RGE) - Mid. Engineering Manager
+- [@Kenny Cardenas](https://github.com/kenny0412) - Mid. Engineering Manager
 - [@Michael Arias](https://github.com/micha032799) - Junior Dev
 - [@Brandon Cardenas](https://github.com/Kendall-22) - Junior Dev
 - [@Kendall Araya](https://github.com/Sean17bcr) - Junior Dev
