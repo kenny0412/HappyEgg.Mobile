@@ -15,3 +15,9 @@ fun App() {
         }
     }
 }
+
+
+@Composable
+fun AppPreview() {
+    App()
+}
