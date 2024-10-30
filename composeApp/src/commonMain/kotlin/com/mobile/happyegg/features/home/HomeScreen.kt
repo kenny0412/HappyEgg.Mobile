@@ -1,23 +1,19 @@
-package com.mobile.happyegg
+package com.mobile.happyegg.features.home
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
-@Preview
-fun App() {
-    MaterialTheme {
-        Column {
-            Text("Set up your app here")
-        }
+fun HomeScreen() {
+    Column {
+        Text("Home Screen")
     }
 }
 
-
+@Preview
 @Composable
-fun AppPreview() {
-    App()
+fun HomeScreenPreview() {
+    HomeScreen()
 }
