@@ -8,7 +8,7 @@
     <img src="https://img.freepik.com/premium-vector/cute-happy-egg-character-funny-jump-egg-cartoon-emoticon-flat-style-chick-emoji-vector_841552-285.jpg" alt="Logo" >
   </a>
 
-<h2 align="center">Android</h2>
+<h2 align="center">Kotlin Multiplatform</h2>
   <p align="center">
     Happy Egg Mobile is an Android project containing multiplatform apps, shared resources, and automation scripts. It includes configuration files for CI/CD pipelines (GitHub Actions).
     <br />
