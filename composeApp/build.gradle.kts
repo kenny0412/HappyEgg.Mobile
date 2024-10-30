@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -7,6 +6,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 kotlin {
@@ -33,6 +33,10 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            // Ktor client for Android
+            implementation(libs.ktor.client.okhttp)
+            //Koin
+            implementation(libs.koin.android)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -43,6 +47,27 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+            // Ktor
+            implementation(libs.ktor.core)
+            implementation(libs.ktor.client.content.negotiation) // Content negotiation for Ktor client
+            implementation(libs.ktor.serialization.json) // Serialize json objects
+            // Image loader Coil
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor)
+            // Navigation
+            implementation(libs.navigation.compose)
+            // ViewModel
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
+            // Koin
+            implementation(project.dependencies.platform(libs.koin.bom))
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
+
+        }
+        iosMain.dependencies {
+            // Ktor client for iOS
+            implementation(libs.ktor.client.darwin)
         }
     }
 }
